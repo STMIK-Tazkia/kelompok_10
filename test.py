@@ -18,3 +18,5 @@ cicilan = (pinjaman_pokok, jangka_kredit, bagi_hasil_setahun)
 
 # Menampilkan hasil
 print(f"Cicilan per bulan yang harus dibayar Rp: {cicilan:, 2f}")
+
+print("saya penyusup")
