@@ -20,3 +20,13 @@ cicilan = (pinjaman_pokok, jangka_kredit, bagi_hasil_setahun)
 print(f"Cicilan per bulan yang harus dibayar Rp: {cicilan:, 2f}")
 
 print("saya penyusup")
+
+print('pengujian operasional')
+
+bil1 = input('masukan bilangan pertama:')
+bil2 = input('masukan bilangan kedua:')
+
+print (bil1,'>',  bil2,'?', bil1>bil2)
+print (bil1,'==', bil2,'?', bil1==bil2)
+print (bil1,'!=', bil2,'?', bil1!=bil2)
+print (bil1,'<=', bil2,'?', bil1<=bil2)
