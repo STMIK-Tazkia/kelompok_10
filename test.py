@@ -47,3 +47,31 @@ B = {4, 2, 5, 17, 2, 3, 6, 15, 6, 4, 20}
 # Panggil fungsi
 hasil_irisan = irisan_himpunan(A, B)
 print("Irisan dari A dan B adalah:", hasil_irisan)
+
+# Menjawab Bagian 3 Soal no 1:Mengurutkan Himpunan A dengan algoritma bubble sort
+def Mengurutkan(tugas):
+    n = len(tugas)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if tugas[j] > tugas[j+1]:
+                tugas[j], tugas[j+1] = tugas[j+1], tugas[j]  
+    return tugas
+
+# Menjawab Bagian 3 Soal no 2:Mencari Nilai x(300) dalam Himpunan A
+def mencari(tugas, x):
+    for i in range(len(tugas)):
+        if tugas[i] == x:
+            return i  
+   
+# Himpunan A
+A = [109, 222, 120, 150, 200, 321, 410, 120, 230, 300, 111, 89, 70, 45, 57, 31, 39, 900, 21, 378, 400, 101, 201, 301, 1]
+mengurutkanA = Mengurutkan(A.copy())  
+print("Himpunan A yang sudah diurutkan:", mengurutkanA)
+
+# Mencari Nilai x (300)
+x = 300
+urutan = mencari(A, x)
+if urutan:
+    print(f"Selamat Nilai {x} akhirnya telah ditemukan pada urutan ke-{urutan + 1}.")
+else:
+    print(f"Nilai {x} sayangnya tidak ditemukan dalam himpunan A.")
